@@ -20,13 +20,13 @@ function takeANumber(katzDeline, newName) {
 
 //3
 function currentLine(katzDeline) {
-  var empty = [];
+  var empty = [ ];
   if (katzDeline.length === 0) {
     return 'The line is currently empty.'
   } else {
     for (var i = 0; i < katzDeline.length; i++) {
-    empty.push ( `${katzDeline.indexOf(katzDeline[i]) + 1 }. ${katzDeline[i]} ` )
+    empty.push (`${katzDeline.indexOf(katzDeline[i]) + 1 }. ${katzDeline[i]} ` )
     }
-    return 'The line is currently: ' + empty
+    return 'The line is currently: ' + empty.join()
   }
 }
